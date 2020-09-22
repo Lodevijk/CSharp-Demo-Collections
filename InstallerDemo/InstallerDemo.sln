@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemoApp", "WpfDemoApp\WpfDemoApp.csproj", "{F0A3FC3A-053D-4378-9E94-4E09AAEE6235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDemoApp", "WpfDemoApp\WpfDemoApp.csproj", "{F0A3FC3A-053D-4378-9E94-4E09AAEE6235}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "DemoInstaller", "DemoInstaller\DemoInstaller.wapproj", "{D8386A59-2378-4B12-AADF-C9FFEB4AFA08}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "DemoInstallerMSIX", "DemoInstaller\DemoInstallerMSIX.wapproj", "{D8386A59-2378-4B12-AADF-C9FFEB4AFA08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

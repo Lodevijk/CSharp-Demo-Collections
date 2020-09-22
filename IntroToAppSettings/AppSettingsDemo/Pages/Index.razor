@@ -1,0 +1,32 @@
+﻿@page "/"
+@inject IConfiguration _config
+<h1>AppSettings Values</h1>
+
+<p>
+    MySetting Value: @mySetting
+</p>
+
+<p>
+    Subsetting Value: @subSetting
+</p>
+
+<p>
+    Connection string Value: @connectionString
+</p>
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    string mySetting = "";
+    string subSetting = "";
+    string connectionString = "";
+
+    protected override void OnInitialized()
+    {
+        mySetting = _config.GetValue<string>("MySetting");
+        subSetting = _config.GetValue<string>("MainSetting:SubSetting");
+        connectionString = _config.GetConnectionString("Default");
+        base.OnInitialized();
+    }
+}

@@ -6,8 +6,18 @@
         xmlns:local="clr-namespace:WpfDemoApp"
         mc:Ignorable="d"
         Background="AliceBlue"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Demo Installable WPF Core App" Height="450" Width="800">
     <Grid>
-        <TextBlock FontSize="38" Margin="20">Some New Text</TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="38" Margin="20">Some New Text</TextBlock>
+        <TextBox Grid.Row="2" Margin="5">Some Text</TextBox>
     </Grid>
 </Window>
